@@ -1,15 +1,44 @@
 <html>
-    <body>
-            <button id="rock">
-                Rock
-            </button>
-            <button id="paper">
-                Paper
-            </button>
-            <button id="scissors">
-                Scissors
-            </button>
-        <script src="./dom.js"></script>
-        <script>src="./main.js"</script>
-    </body>
+<head>
+	<meta charset="UTF-8">
+	<title>Rock Paper Scissors</title>
+	<script src="main.js"></script>
+</head>
+<body>
+	<div class = "container text-center">
+		<h2>Rock Paper Scissors Game</h2>
+		<br>
+		<div class="container">
+            <div class="row">
+		<div class="col-sm">
+		      <h4>Games Played: <span id="games">0</span></h4>
+		    </div>
+		    <div class="col-sm">
+		      <h4>User Score: <span id="user_score">0</span></h4>
+		    </div>
+		    <div class="col-sm">
+		      <h4>CPU Score: <span id="cpu_score">0</span></h4>
+		    </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+		    <div class="col-sm">
+		      <h4>Player: <span id="player_choice">-</span></h4>
+		    </div>
+		    <div class="col-sm">
+		      <h4>CPU: <span id="cpu_choice">-</span></h4>
+		    </div>
+          </div>
+          <br>
+		  <h4>Result: <span id="result">-</span></h4>
+		</div>
+		<br>
+		<span>
+			<button type="button" class="btn btn-success btn-lg" id="rock" onclick="game(rock)">Rock</button>
+			<button type="button" class="btn btn-success btn-lg" id="paper" onclick="game(paper)">Paper</button>
+			<button type="button" class="btn btn-success btn-lg" id="scissors" onclick="game(scissors)">Scissors</button>
+		</span>
+	</div>
+</body>
 </html>
